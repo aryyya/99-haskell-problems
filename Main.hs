@@ -19,3 +19,9 @@ myButLast xs = reverse xs !! 1
 
 elementAt :: [a] -> Int -> a
 elementAt xs n = xs !! (n - 1)
+
+-- problem 4
+
+myLength :: [a] -> Int
+myLength []     = 0
+myLength (_:xs) = 1 + myLength xs
