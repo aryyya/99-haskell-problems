@@ -25,3 +25,9 @@ elementAt xs n = xs !! (n - 1)
 myLength :: [a] -> Int
 myLength []     = 0
 myLength (_:xs) = 1 + myLength xs
+
+-- problem 5
+
+myReverse :: [a] -> [a]
+myReverse [] = []
+myReverse (x:xs) = myReverse xs ++ [x]
